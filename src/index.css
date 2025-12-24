@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --kraft-color: #c9b896;
+  --kraft-light: #e8dcc4;
+  --kraft-aged: #d4c4a8;
+  --leather-burgundy: #722F37;
+  --leather-dark: #4a1c21;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Patrick Hand', cursive;
+  background: linear-gradient(135deg, #2c1810 0%, #1a0f0a 100%);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+@media (min-width: 640px) {
+  #root {
+    padding: 12px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #root {
+    padding: 20px;
+  }
+}
+
+/* Prevent overscroll on iOS */
+html, body {
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Fix for mobile viewport height */
+@supports (-webkit-touch-callout: none) {
+  body {
+    min-height: -webkit-fill-available;
+  }
+}
+
+/* Custom scrollbar - global */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--leather-burgundy);
+  border-radius: 4px;
+}
+
+/* Scrapbook page scrollbar - thin and subtle */
+.scrapbook-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scrapbook-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrapbook-scroll::-webkit-scrollbar-thumb {
+  background: rgba(114, 47, 55, 0.35);
+  border-radius: 2px;
+}
+
+.scrapbook-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(114, 47, 55, 0.5);
+}
+
+/* Firefox scrollbar */
+.scrapbook-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(114, 47, 55, 0.35) transparent;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(114, 47, 55, 0.4);
+  color: inherit;
+}

@@ -1,0 +1,117 @@
+{
+  "album_metadata": {
+    "title": "Las Aventuras de Camila y Martín",
+    "concept": "Our Adventure Book (Inspirado en UP / Pixar)",
+    "start_date": "2025-02-14",
+    "status": "In_Progress",
+    "last_entry_detected": "2025-11-00 (Los Robles)"
+  },
+  "content_structure": [
+    {
+      "page_id": 1,
+      "section": "Cover / Intro",
+      "elements": {
+        "visuals": ["Ilustración Carl & Ellie (Niños)", "Foto Carl & Ellie césped"],
+        "text": ["14/02/25", "Can I go <3"],
+        "stickers": ["Libélula / Insecto verde"]
+      }
+    },
+    {
+      "page_id": 2,
+      "section": "Índice & Primer Hito",
+      "elements": {
+        "text": ["INDICE", "PRIMER SAN VALENTIN"],
+        "items": ["Foto del libro físico rodeado de chocolates Nestlé y caja roja de bombones"],
+        "annotations": "Intuición: es creer en vos (Sticker místico/holográfico)"
+      }
+    },
+    {
+      "page_id": 3,
+      "section": "Orígenes",
+      "elements": {
+        "title": "ACÁ ES DONDE TODO COMENZÓ",
+        "locations": ["Estación de tren (Línea Sarmiento)", "Cine (Estreno de Dune)"],
+        "food_logs": ["Hamburguesas tipo gourmet", "Snacks: Snickers, Pipas Gigantes"],
+        "vehicles": ["Volkswagen gris/plata", "Trenes Argentinos (EMU CSR)"],
+        "poetry": "Fragmento sobre el encanto de la pasión y entregar el corazón"
+      }
+    },
+    {
+      "page_id": 4,
+      "section": "Lugares Favoritos - Zona Oeste",
+      "elements": {
+        "main_location": "Moreno (Reserva Los Robles / Dique Roggero)",
+        "dates_detected": ["Mayo 2024 (Tras Volt)", "Noviembre 2024"],
+        "stickers": [
+          "Ruta 7 Moreno", 
+          "Boarding Pass: Carl Fredricksen a Venezuela (21B)",
+          "Paradise Falls (UP)",
+          "Adventure is out there"
+        ],
+        "context": "Mención a Moreno como 'Naturalmente Único'"
+      }
+    },
+    {
+      "page_id": 5,
+      "section": "Eventos Culturales & Hitos",
+      "elements": {
+        "locations": ["Jardín Japonés (Noche)", "Planetario (Beso)", "Moreno/Gral. Rodríguez"],
+        "events": ["Festival Matsuri"],
+        "philately": "Estampilla República Argentina (20+10c) - Picaflor Enano",
+        "visual_notes": "Uso de gorros de lana rojos (Invierno 2024/25)"
+      }
+    },
+    {
+      "page_id": 6,
+      "section": "Actividades Favoritas - Intelectual & Outdoors",
+      "elements": {
+        "events": [
+          "Feria del Libro Universidad de Hurlingham (UNAHUR)",
+          "1° Booklover Fest (Invitada: Mailen)"
+        ],
+        "sports": "Bicicleta Time (Uso de cascos reglamentarios rojo/amarillo)",
+        "urban": "Barrio Chino (Selfie con gestos)",
+        "fortune_cookies": [
+          "Tu acción más pequeña atraerá muchas",
+          "Llegarás a la conclusión que tanto buscas"
+        ],
+        "nicknames": ["Martín-swan", "Cami-swan"]
+      }
+    },
+    {
+      "page_id": 7,
+      "section": "Inmersión en Naturaleza I",
+      "elements": {
+        "locations": ["Reserva Natural Urbana El Palomar", "Los Robles"],
+        "botany_data": [
+          "Hongos del Talar",
+          "Oruga de la Mariposa Zafiro del Talar",
+          "Cortaderas / Cola de Zorro / Espiga Asesina"
+        ],
+        "fauna": "Lechuzas",
+        "stickers": ["Carpincho (Zonrito - Martín-swan)", "Russell (Wilderness Explorer)"]
+      }
+    },
+    {
+      "page_id": 8,
+      "section": "Inmersión en Naturaleza II",
+      "elements": {
+        "hitos": ["Los Robles - Junio 2025", "Biblioteca de Los Robles", "Los Gliptodontes"],
+        "objects": "Mate rojo (Regalo de Aldi <3)",
+        "literature": "Tarjeta: 'Dulzura busca la abeja en el seno de la flor...'",
+        "notes": "Corazón con 'Te amo' manuscrito"
+      }
+    },
+    {
+      "page_id": 9,
+      "section": "Cultura Urbana & Ciencia",
+      "elements": {
+        "urban_trips": ["Av. Corrientes (Obelisco)", "Teatro Metropolitan"],
+        "events": ["Competencia de Tabox"],
+        "science_activism": "Bolsa/Tote: 'Sin ciencia no hay futuro'",
+        "religious_tourism": "Basílica de Luján (1era vez juntos)",
+        "fun": "Parque de Diversiones (Sillas voladoras)"
+      }
+    }
+  ]
+}

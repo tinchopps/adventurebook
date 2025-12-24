@@ -1,0 +1,285 @@
+/* ========================================
+   SCRAPBOOK TEXTURES - CSS Module
+   Organic paper and material textures
+   ======================================== */
+
+/* Kraft Paper Texture */
+.kraftPaper {
+  background-color: #fdfbf7;
+  background-image: 
+    /* Paper noise texture */
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.06'/%3E%3C/svg%3E"),
+    /* Aged edges effect */
+    radial-gradient(ellipse at center, #fdfbf7 55%, #f5efe5 75%, #ebe3d4 100%),
+    /* Subtle fiber lines */
+    linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.04) 50%, transparent 100%);
+  position: relative;
+}
+
+.kraftPaper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    /* Horizontal paper fiber texture */
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 3px,
+      rgba(139, 119, 87, 0.02) 3px,
+      rgba(139, 119, 87, 0.02) 4px
+    ),
+    /* Vertical subtle lines */
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 5px,
+      rgba(139, 119, 87, 0.015) 5px,
+      rgba(139, 119, 87, 0.015) 6px
+    );
+  pointer-events: none;
+}
+
+/* Add vignette effect for aged look */
+.kraftPaper::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 50%,
+    rgba(139, 119, 87, 0.08) 100%
+  );
+  pointer-events: none;
+}
+
+/* Aged Paper Effect */
+.agedPaper {
+  background: 
+    radial-gradient(ellipse at 20% 20%, rgba(139, 119, 87, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(139, 119, 87, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%, rgba(255, 248, 230, 0.5) 0%, transparent 70%),
+    #d4c4a8;
+  position: relative;
+}
+
+.agedPaper::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23grain)' opacity='0.05'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+/* Leather Cover Texture */
+.leatherTexture {
+  background: 
+    radial-gradient(ellipse at 30% 30%, rgba(139, 64, 73, 0.6) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 70%, rgba(74, 28, 33, 0.8) 0%, transparent 50%),
+    linear-gradient(180deg, #8B4049 0%, #722F37 30%, #4a1c21 100%);
+  position: relative;
+}
+
+.leatherTexture::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='leather'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.04' numOctaves='5'/%3E%3CfeDisplacementMap in='SourceGraphic' scale='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23leather)' opacity='0.15'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.leatherTexture::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(90deg, rgba(0,0,0,0.3) 0%, transparent 5%, transparent 95%, rgba(0,0,0,0.3) 100%),
+    linear-gradient(180deg, rgba(255,255,255,0.1) 0%, transparent 10%, transparent 90%, rgba(0,0,0,0.2) 100%);
+  pointer-events: none;
+}
+
+/* Washi Tape Base */
+.washiTape {
+  position: relative;
+  background: rgba(248, 180, 196, 0.85);
+  padding: 8px 20px;
+  opacity: 0.9;
+}
+
+.washiTape::before,
+.washiTape::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: 
+    repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent 2px,
+      rgba(255,255,255,0.5) 2px,
+      rgba(255,255,255,0.5) 4px
+    );
+}
+
+.washiTape::before {
+  left: 0;
+}
+
+.washiTape::after {
+  right: 0;
+}
+
+/* Polaroid Frame */
+.polaroidFrame {
+  background: linear-gradient(145deg, #ffffff 0%, #f8f8f5 40%, #f0efe8 80%, #e8e5dc 100%);
+  padding: 10px 10px 40px 10px;
+  box-shadow: 
+    /* Main diffuse shadow */
+    3px 5px 15px rgba(0,0,0,0.3),
+    /* Lifted corner effect */
+    6px 8px 20px rgba(0,0,0,0.15),
+    /* Subtle contact shadow */
+    1px 2px 4px rgba(0,0,0,0.2),
+    /* Inner highlight */
+    inset 0 0 30px rgba(255,255,255,0.5),
+    inset 0 0 3px rgba(0,0,0,0.03);
+  /* Irregular border-radius for physical photo curvature */
+  border-radius: 2px 3px 4px 2px / 3px 2px 3px 4px;
+  /* Subtle paper texture */
+  position: relative;
+}
+
+.polaroidFrame::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23grain)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+@media (min-width: 640px) {
+  .polaroidFrame {
+    padding: 15px 15px 60px 15px;
+    box-shadow: 
+      4px 6px 18px rgba(0,0,0,0.28),
+      8px 10px 25px rgba(0,0,0,0.12),
+      2px 3px 6px rgba(0,0,0,0.18),
+      inset 0 0 40px rgba(255,255,255,0.5),
+      inset 0 0 4px rgba(0,0,0,0.02);
+  }
+}
+
+/* Photo Shadow */
+.photoShadow {
+  box-shadow: 
+    3px 5px 15px rgba(0,0,0,0.35),
+    6px 8px 20px rgba(0,0,0,0.15),
+    inset 0 0 0 1px rgba(0,0,0,0.05);
+  border-radius: 1px 2px 3px 1px / 2px 1px 2px 3px;
+}
+
+/* Note Paper */
+.notePaper {
+  background: 
+    linear-gradient(#fffef8 0%, #fffef8 100%);
+  background-size: 100% 28px;
+  box-shadow: 
+    2px 3px 6px rgba(0,0,0,0.2),
+    inset 0 0 20px rgba(0,0,0,0.02);
+  position: relative;
+}
+
+.notePaper::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(255, 150, 150, 0.4);
+}
+
+/* Stamp Effect */
+.stampEffect {
+  border: 3px dashed rgba(114, 47, 55, 0.6);
+  padding: 10px;
+  background: rgba(255, 248, 240, 0.9);
+}
+
+/* Hand-drawn checkbox */
+.handDrawnCheck {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #4a4a4a;
+  border-radius: 3px;
+  position: relative;
+  transform: rotate(-2deg);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+@media (min-width: 640px) {
+  .handDrawnCheck {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.handDrawnCheck.checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(5deg);
+  font-size: 20px;
+  color: #2d5a27;
+  font-weight: bold;
+}
+
+/* Page Curl Effect */
+.pageCurl {
+  position: relative;
+}
+
+.pageCurl::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, transparent 50%, rgba(0,0,0,0.1) 50%);
+  border-radius: 0 0 0 10px;
+}
+
+/* Book Spine Shadow */
+.spineGradient {
+  background: linear-gradient(90deg, 
+    rgba(0,0,0,0.4) 0%, 
+    rgba(0,0,0,0.1) 10%, 
+    transparent 20%
+  );
+}
+
+/* Skeleton Loader */
+.skeletonPulse {
+  background: linear-gradient(
+    90deg,
+    rgba(200, 200, 200, 0.3) 0%,
+    rgba(200, 200, 200, 0.5) 50%,
+    rgba(200, 200, 200, 0.3) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
